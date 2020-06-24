@@ -27,8 +27,8 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="param" value="Value2"/>
-          <con:entry key="param1" value="Value1"/>
+          <con:entry key="param" value="Remote Value2"/>
+          <con:entry key="param1" value="Remote Value1"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>param1</con:entry>
