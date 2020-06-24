@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="58edb2b9-f193-42b8-b78f-0ba34563371f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58edb2b9-f193-42b8-b78f-0ba34563371ffileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="1e1a1d31-b1a6-432e-9312-9af468f10d80">
+    <con:settings/>
+    <con:config service="http://localhost:8080" resourcePath="/test" methodName="Test" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="1315af64-e5bb-4d6a-9acf-848e71e6203c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://localhost:8080</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="52362303-604c-4ccc-9fc9-fd139069463a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="f92d4959-6393-4c03-aed8-65f883c04809" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="param" value="Value2"/>
+          <con:entry key="param1" value="Value1"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>param1</con:entry>
+          <con:entry>param</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

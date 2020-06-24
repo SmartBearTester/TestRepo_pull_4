@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="2c11e332-30de-4e91-8e42-ef78aaacf2af" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2c11e332-30de-4e91-8e42-ef78aaacf2affileName">http%3A%2F%2Flocalhost%3A8080</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://localhost:8080</con:endpoint>
+  </con:endpoints>
+</con:interface>

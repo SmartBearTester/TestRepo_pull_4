@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Test" path="/test" id="de3f5e68-9ab1-4340-b7ea-9405b3ef6698" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="de3f5e68-9ab1-4340-b7ea-9405b3ef6698fileName">Test</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Test" id="61bb5bfb-2561-4c4c-8fb9-78ff7982ba58" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>param1</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>param</con:name>
+        <con:value/>
+        <con:style>HEADER</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="1315af64-e5bb-4d6a-9acf-848e71e6203c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://localhost:8080</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="param" value="Value2"/>
+        <con:entry key="param1" value="Value1"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>param1</con:entry>
+        <con:entry>param</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
